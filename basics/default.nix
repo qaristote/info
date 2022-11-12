@@ -2,7 +2,7 @@
 
 let
   institution = {
-    position = "student in Theoretical Computer Science";
+    position = "Theoretical Computer Science student";
     name = "École Normale Supérieure";
     url = "https://www.ens.psl.eu/en";
   };
