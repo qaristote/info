@@ -26,23 +26,29 @@ in {
     postalCode = "75230 CEDEX 05";
     country = "France";
   };
-  profiles = [
-    {
-      network = "GitLab";
-      url = "https://git.eleves.ens.fr/qaristote";
-      username = "qaristote";
-    }
-    {
-      network = "GitLab";
-      url = "https://gitlab.math.univ-paris-diderot.fr/aristote";
-      username = "aristote";
-    }
-    {
-      network = "GitHub";
-      url = "https://github.com/qaristote";
-      username = "qaristote";
-    }
-  ];
+  profiles = {
+    Git = {
+      icon = "git";
+      profiles = {
+        personal = {
+          icon = "github";
+          url = "https://github.com/qaristote";
+        };
+        ENS = {
+          icon = "gitlab";
+          url = "https://git.eleves.ens.fr/qaristote";
+        };
+        IRIF = {
+          icon = "gitlab";
+          url = "https://gitlab.math.univ-paris-diderot.fr/aristote";
+        };
+      };
+    };
+    LinkedIn = {
+      icon = "linkedin";
+      url = "https://fr.linkedin.com/in/quentin-aristote-83979b186";
+    };
+  };
   keys = let
     getKeyFiles = type: keys: {
       "${type}" = builtins.foldl'
