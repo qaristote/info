@@ -21,5 +21,5 @@
       id = "aristoteApplicationsCategoricalFramework2022";
     }
   ];
-  description = "Studied a categorical framework for the minimization and active learning of transition systems.";
+  description = "Generalized a categorical framework for the minimization and active learning of transition systems and instanciated it to develop new such algorithms.";
 }

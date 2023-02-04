@@ -24,5 +24,5 @@
       id = "aristoteFibrationalFrameworkNested2020";
     }
   ];
-  description = "Studied a fibrational framework for nested fixed points and (bi)simulation notions for Büchi automata.";
+  description = "Generalized a greatest-fixed-points- and safety-games-based fibrational framework for bisimulations to nested fixed points and parity games.";
 }

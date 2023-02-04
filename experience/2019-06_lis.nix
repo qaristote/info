@@ -26,5 +26,5 @@
     }
   ];
   description =
-    "Studied a quantum walker whose density changes its own environment.";
+    "Developed a quantum walker model whose density changes its own environment.";
 }
