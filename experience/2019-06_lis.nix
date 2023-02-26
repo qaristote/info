@@ -19,10 +19,12 @@
     {
       name = "internship report";
       id = "aristoteMarcheQuantiqueReseau2019";
+      type = "Publications";
     }
     {
       name = "paper";
       id = "aristoteDynamicalTriangulationInduced2020";
+      type = "Publications";
     }
   ];
   description =

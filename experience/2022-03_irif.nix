@@ -19,6 +19,7 @@
     {
       name = "internship report";
       id = "aristoteApplicationsCategoricalFramework2022";
+      type = "Publications"; 
     }
   ];
   description = "Generalized a categorical framework for the minimization and active learning of transition systems and instanciated it to develop new such algorithms.";

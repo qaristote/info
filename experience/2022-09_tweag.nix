@@ -1,4 +1,4 @@
-{ href, ... }:
+{ href, code, ... }:
 
 {
   date = {
@@ -11,7 +11,19 @@
     url = "https://www.tweag.io/";
     location = "Paris, France";
   };
-  description = "Ongoing. Speeding-up ${
+  assets = [
+    {
+      name = "blog post";
+      id = "aristoteSmtlibbackendsFasterSMTLIBbased2023";
+      type = "Publications";
+    }
+    {
+      name = "library";
+      id = "aristoteSmtlibbackends2022";
+      type = "Software";
+    }
+  ];
+  description = "Sped-up ${
       href "https://github.com/tweag/pirouette" "Pirouette"
     } (a symbolic evaluator using incorrectness logic) by optimizing its interactions with SMT solvers.";
 }
