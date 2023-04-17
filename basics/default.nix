@@ -11,7 +11,7 @@ in {
   email = [
     {
       name = "academic";
-      address = "quentin.aristote@ens.fr";
+      address = "quentin.aristote@irif.fr";
     }
     {
       name = "personal";
