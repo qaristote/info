@@ -20,10 +20,11 @@ in {
   ];
   avatar = file "avatar.jpg";
   location = {
-    number = "45";
-    street = "rue d'Ulm";
+    office = "4031";
+    number = "8";
+    street = "place Aurélie Nemours";
     city = "Paris";
-    postalCode = "75230 CEDEX 05";
+    postalCode = "75013";
     country = "France";
   };
   profiles = {
