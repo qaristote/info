@@ -2,8 +2,16 @@
 
 {
   date = {
-    start = "2019-06-01";
-    end = "2019-07-31";
+    start = {
+      year = 2019;
+      month = 6;
+      day = 1;
+    };
+    end = {
+      year = 2019;
+      month = 7;
+      day = 31;
+    };
   };
   institution = {
     position = "research intern in Natural Computing";

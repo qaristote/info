@@ -3,5 +3,8 @@
 {
   name = "English";
   proficiency = "fluent";
-  icon = "&#x1F1EC;&#x1F1E7;";
+  icon = {
+    codepoints = [ "1F1EC" "1F1E7" ];
+    shortcode = "flag-united-kingdom";
+  };
 }

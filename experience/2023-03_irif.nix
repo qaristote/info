@@ -2,8 +2,16 @@
 
 {
   date = {
-    start = "2023-02-27";
-    end = "2023-07-28";
+    start = {
+      year = 2023;
+      month = 2;
+      day = 27;
+    };
+    end = {
+      year = 2023;
+      month = 7;
+      day = 28;
+    };
   };
   institution = {
     position = "research intern in Applied Category Theory";

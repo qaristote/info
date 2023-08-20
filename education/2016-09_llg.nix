@@ -1,12 +1,23 @@
 { href, ... }:
 
 {
-  date = { start = "2016-09-01"; end = "2018-07-31"; };
+  date = {
+    start = {
+      year = 2016;
+      month = 9;
+      day = 1;
+    };
+    end = {
+      year = 2018;
+      month = 7;
+      day = 31;
+    };
+  };
   institution = {
     name = "Lycée Louis-le-Grand";
     location = "Paris, France";
     url = "https://www.louislegrand.fr/";
   };
   studyType = "Higher Schools Preparatory Classes";
-  description = "MPSI - MP* (Mathematics, Physics & Computer Science)";
+  description = "MPSI - MP* (Mathematics, Physics and Computer Science)";
 }

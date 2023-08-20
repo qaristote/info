@@ -2,8 +2,16 @@
 
 {
   date = {
-    start = "2022-03-14";
-    end = "2022-07-31";
+    start = {
+      year = 2022;
+      month = 3;
+      day = 14;
+    };
+    end = {
+      year = 2022;
+      month = 7;
+      day = 31;
+    };
   };
   institution = {
     position = "research intern in Applied Category Theory";
@@ -15,12 +23,11 @@
     name = "Daniela Petrişan";
     url = "https:/www.irif.fr/~petrisan/";
   }];
-  assets = [
-    {
-      name = "internship report";
-      id = "aristoteApplicationsCategoricalFramework2022";
-      type = "Publications"; 
-    }
-  ];
-  description = "Generalized a categorical framework for the minimization and active learning of transition systems and instanciated it to develop new such algorithms.";
+  assets = [{
+    name = "internship report";
+    id = "aristoteApplicationsCategoricalFramework2022";
+    type = "Publications";
+  }];
+  description =
+    "Generalized a categorical framework for the minimization and active learning of transition systems and instanciated it to develop new such algorithms.";
 }

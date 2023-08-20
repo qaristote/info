@@ -2,8 +2,16 @@
 
 {
   date = {
-    start = "2018-09-01";
-    end = "2023-08-31";
+    start = {
+      year = 2018;
+      month = 9;
+      day = 1;
+    };
+    end = {
+      year = 2023;
+      month = 8;
+      day = 31;
+    };
   };
   institution = {
     name = "École Normale Supérieure";

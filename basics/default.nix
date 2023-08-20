@@ -8,16 +8,10 @@ let
   };
 in {
   inherit institution;
-  email = [
-    {
-      name = "academic";
-      address = "quentin.aristote@irif.fr";
-    }
-    {
-      name = "personal";
-      address = "quentin@aristote.fr";
-    }
-  ];
+  email = {
+    academic = "quentin.aristote@irif.fr";
+    personal = "quentin@aristote.fr";
+  };
   avatar = file "avatar.jpg";
   location = {
     office = "4031";
@@ -58,7 +52,10 @@ in {
     };
   in getKeyFiles "pgp" [ "DFC1660846EEA97C059F18534EF515441E635D36" ]
   // getKeyFiles "ssh" [ "qaristote@latitude-7490" ];
-  name = "Quentin Aristote";
+  name = {
+    first = "Quentin";
+    last = "Aristote";
+  };
   url = "https://quentin.aristote.fr/";
   description = ''
     I am a student at the ${

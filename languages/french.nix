@@ -3,5 +3,8 @@
 {
   name = "French";
   proficiency = "native";
-  icon = "&#x1F1EB;&#x1F1F7;";
+  icon = {
+    codepoints = [ "1F1EB" "1F1F7" ];
+    shortcode = "flag-france";
+  };
 }

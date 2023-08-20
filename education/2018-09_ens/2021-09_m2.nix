@@ -2,8 +2,16 @@
 
 {
   date = {
-    start = "2021-09-01";
-    end = "2022-07-31";
+    start = {
+      year = 2021;
+      month = 9;
+      day = 1;
+    };
+    end = {
+      year = 2022;
+      month = 7;
+      day = 31;
+    };
   };
   program = {
     name = "Parisian Master of Research in Computer Science";

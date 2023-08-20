@@ -2,8 +2,16 @@
 
 {
   date = {
-    start = "2022-09-14";
-    end = "2023-02-24";
+    start = {
+      year = 2022;
+      month = 9;
+      day = 14;
+    };
+    end = {
+      year = 2023;
+      month = 2;
+      day = 24;
+    };
   };
   institution = {
     position = "Software Engineering intern";

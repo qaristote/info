@@ -2,8 +2,16 @@
 
 {
   date = {
-    start = "2018-09-01";
-    end = "2019-07-31";
+    start = {
+      year = 2018;
+      month = 9;
+      day = 1;
+    };
+    end = {
+      year = 2019;
+      month = 7;
+      day = 31;
+    };
   };
   program = {
     name = "ENS's Computer Science Department";
@@ -32,5 +40,5 @@
     ];
   };
   description =
-    "Graduated with highest honors in Computer Science (17.80/20), with honors in Mathematics (14.74/20)";
+    "Graduated with highest honors in Computer Science (17.80/20), with honors in Mathematics (14.74/20).";
 }

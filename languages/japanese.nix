@@ -3,5 +3,8 @@
 {
   name = "Japanese";
   proficiency = "intermediate";
-  icon = "&#x1F1EF;&#x1F1F5;";
+  icon = {
+    codepoints = [ "1F1EF" "1F1F5" ];
+    shortcode = "flag-japan";
+  };
 }

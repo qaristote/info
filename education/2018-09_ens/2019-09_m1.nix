@@ -2,8 +2,16 @@
 
 {
   date = {
-    start = "2019-09-01";
-    end = "2020-07-31";
+    start = {
+      year = 2019;
+      month = 9;
+      day = 1;
+    };
+    end = {
+      year = 2020;
+      month = 7;
+      day = 31;
+    };
   };
   program = {
     name = "ENS's Computer Science Department";
