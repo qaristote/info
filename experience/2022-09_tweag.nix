@@ -11,6 +11,10 @@
     url = "https://www.tweag.io/";
     location = "Paris, France";
   };
+  supervisors = [{
+    name = "Tweag's HAS group";
+    url = "https://www.tweag.io/group/high-assurance-software/";
+  }];
   assets = [
     {
       name = "blog post";
