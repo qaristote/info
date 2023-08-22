@@ -2,9 +2,9 @@
 
 let
   institution = {
-    position = "Theoretical Computer Science student";
-    name = "École Normale Supérieure";
-    url = "https://www.ens.psl.eu/en";
+    position = "PhD student in Theoretical Computer Science";
+    name = "IRIF";
+    url = "https://www.irif.fr/en/index";
   };
 in {
   inherit institution;
@@ -29,13 +29,14 @@ in {
           icon = "github";
           url = "https://github.com/qaristote";
         };
-        ENS = {
-          icon = "gitlab";
-          url = "https://git.eleves.ens.fr/qaristote";
-        };
         IRIF = {
           icon = "gitlab";
           url = "https://gitlab.math.univ-paris-diderot.fr/aristote";
+        };
+
+        ENS = {
+          icon = "gitlab";
+          url = "https://git.eleves.ens.fr/qaristote";
         };
       };
     };
@@ -58,12 +59,22 @@ in {
   };
   url = "https://quentin.aristote.fr/";
   description = ''
-    I am a student at the ${
-      href "https://www.di.ens.fr/" "Computer Science Department (DI)"
-    } of the ${with institution; href url name}, an institution part of ${
-      href "https://psl.eu/en" "PSL University"
+    I am a PhD student in Theoretical Computer Science at ${
+      href "https://www.irif.fr/en/index" "IRIF"
+    }, under the supervision of ${
+      href "https://www.irif.fr/~petrisan/" "Daniela Petrişan"
+    }. My PhD involves studying the compositionality of ${
+      href "https://en.wikipedia.org/wiki/Monad_(category_theory)" "monads"
+    } through ${
+      href "https://ncatlab.org/nlab/show/weak+distributive+law"
+      "weak distributive laws"
+    }, and its applications to ${
+      href "https://en.wikipedia.org/wiki/Side-effect_(computer_science)"
+      "effectful programming"
+    }, in particular within ${
+      href "https://en.wikipedia.org/wiki/Automata_theory" "automata theory"
     }.
 
-    I am mainly interested in applying abstract mathematical theories (e.g. category theory) to computer science in order to get new results for free. I am also interested in practical computer science and enjoy programming using functional languages as well as tinkering with systems.
+    More generally, I am mainly interested in applying abstract mathematical theories (e.g. category theory) to computer science in order to get new results for free. I am also interested in practical computer science and enjoy programming using functional languages as well as tinkering with systems.
   '';
 }

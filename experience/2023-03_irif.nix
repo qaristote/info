@@ -23,5 +23,11 @@
     name = "Daniela Petrişan";
     url = "https:/www.irif.fr/~petrisan/";
   }];
-  description = "Ongoing. Pre-PhD internship.";
+  assets = [{
+    type = "Publications";
+    id = "aristoteFunctorialApproachMinimizing2023";
+    name = "paper";
+  }];
+  description =
+    "Follow-up to my M2's internship: wrote a paper and further explored some open questions as a preparation for my PhD.";
 }
