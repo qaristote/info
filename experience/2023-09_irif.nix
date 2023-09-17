@@ -1,6 +1,4 @@
-{ ... }:
-
-{
+{...}: {
   date = {
     start = {
       year = 2023;
@@ -19,10 +17,11 @@
     url = "https://www.irif.fr/en/index";
     location = "Paris, France";
   };
-  supervisors = [{
-    name = "Daniela Petrişan";
-    url = "https:/www.irif.fr/~petrisan/";
-  }];
-  description =
-    "Ongoing. Studying compositionality of monads and its application to effectful programming, in particular within automata theory.";
+  supervisors = [
+    {
+      name = "Daniela Petrişan";
+      url = "https:/www.irif.fr/~petrisan/";
+    }
+  ];
+  description = "Ongoing. Studying compositionality of monads and its application to effectful programming, in particular within automata theory.";
 }

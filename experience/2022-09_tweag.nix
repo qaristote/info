@@ -1,6 +1,4 @@
-{ href, code, ... }:
-
-{
+{href, ...}: {
   date = {
     start = {
       year = 2022;
@@ -19,10 +17,12 @@
     url = "https://www.tweag.io/";
     location = "Paris, France";
   };
-  supervisors = [{
-    name = "Tweag's HAS group";
-    url = "https://www.tweag.io/group/high-assurance-software/";
-  }];
+  supervisors = [
+    {
+      name = "Tweag's HAS group";
+      url = "https://www.tweag.io/group/high-assurance-software/";
+    }
+  ];
   assets = [
     {
       name = "blog post";
@@ -36,6 +36,6 @@
     }
   ];
   description = "Sped-up ${
-      href "https://github.com/tweag/pirouette" "Pirouette"
-    } (a symbolic evaluator using incorrectness logic) by optimizing its interactions with SMT solvers.";
+    href "https://github.com/tweag/pirouette" "Pirouette"
+  } (a symbolic evaluator using incorrectness logic) by optimizing its interactions with SMT solvers.";
 }

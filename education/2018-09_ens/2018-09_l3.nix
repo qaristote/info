@@ -1,6 +1,4 @@
-{ ... }:
-
-{
+{...}: {
   date = {
     start = {
       year = 2018;
@@ -39,6 +37,5 @@
       "Information Theory"
     ];
   };
-  description =
-    "Graduated with highest honors in Computer Science (17.80/20), with honors in Mathematics (14.74/20).";
+  description = "Graduated with highest honors in Computer Science (17.80/20), with honors in Mathematics (14.74/20).";
 }

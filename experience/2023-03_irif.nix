@@ -1,6 +1,4 @@
-{ ... }:
-
-{
+{...}: {
   date = {
     start = {
       year = 2023;
@@ -19,15 +17,18 @@
     url = "https://www.irif.fr/en/index";
     location = "Paris, France";
   };
-  supervisors = [{
-    name = "Daniela Petrişan";
-    url = "https:/www.irif.fr/~petrisan/";
-  }];
-  assets = [{
-    type = "Publications";
-    id = "aristoteFunctorialApproachMinimizing2023";
-    name = "paper";
-  }];
-  description =
-    "Follow-up to my M2's internship: wrote a paper and further explored some open questions as a preparation for my PhD.";
+  supervisors = [
+    {
+      name = "Daniela Petrişan";
+      url = "https:/www.irif.fr/~petrisan/";
+    }
+  ];
+  assets = [
+    {
+      type = "Publications";
+      id = "aristoteFunctorialApproachMinimizing2023";
+      name = "paper";
+    }
+  ];
+  description = "Follow-up to my M2's internship: wrote a paper and further explored some open questions as a preparation for my PhD.";
 }

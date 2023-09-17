@@ -1,6 +1,4 @@
-{ ... }:
-
-{
+{...}: {
   date = {
     start = {
       year = 2020;
@@ -29,11 +27,12 @@
       url = "https://group-mmm.org/~dubut/";
     }
   ];
-  assets = [{
-    name = "internship report";
-    id = "aristoteFibrationalFrameworkNested2020";
-    type = "Publications";
-  }];
-  description =
-    "Generalized a greatest-fixed-points- and safety-games-based fibrational framework for bisimulations to nested fixed points and parity games.";
+  assets = [
+    {
+      name = "internship report";
+      id = "aristoteFibrationalFrameworkNested2020";
+      type = "Publications";
+    }
+  ];
+  description = "Generalized a greatest-fixed-points- and safety-games-based fibrational framework for bisimulations to nested fixed points and parity games.";
 }

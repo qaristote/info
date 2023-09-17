@@ -1,6 +1,4 @@
-{ ... }:
-
-{
+{...}: {
   date = {
     start = {
       year = 2019;
@@ -19,10 +17,12 @@
     url = "https://www.lis-lab.fr/en/home/";
     location = "Luminy, France";
   };
-  supervisors = [{
-    name = "Giuseppe di Molfetta";
-    url = "https://www.giuseppe-dimolfetta.com";
-  }];
+  supervisors = [
+    {
+      name = "Giuseppe di Molfetta";
+      url = "https://www.giuseppe-dimolfetta.com";
+    }
+  ];
   assets = [
     {
       name = "internship report";
@@ -35,6 +35,5 @@
       type = "Publications";
     }
   ];
-  description =
-    "Developed a quantum walker model whose density changes its own environment.";
+  description = "Developed a quantum walker model whose density changes its own environment.";
 }

@@ -1,6 +1,8 @@
-{ href, file, ... }:
-
-let
+{
+  href,
+  file,
+  ...
+}: let
   institution = {
     position = "PhD student in Theoretical Computer Science";
     name = "IRIF";
@@ -47,12 +49,14 @@ in {
   };
   keys = let
     getKeyFiles = type: keys: {
-      "${type}" = builtins.foldl'
-        (tmp: name: tmp // { "${name}" = file "keys/${type}/${name}.pub"; }) { }
+      "${type}" =
+        builtins.foldl'
+        (tmp: name: tmp // {"${name}" = file "keys/${type}/${name}.pub";}) {}
         keys;
     };
-  in getKeyFiles "pgp" [ "DFC1660846EEA97C059F18534EF515441E635D36" ]
-  // getKeyFiles "ssh" [ "qaristote@latitude-7490" ];
+  in
+    getKeyFiles "pgp" ["DFC1660846EEA97C059F18534EF515441E635D36"]
+    // getKeyFiles "ssh" ["qaristote@latitude-7490"];
   name = {
     first = "Quentin";
     last = "Aristote";

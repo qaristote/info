@@ -1,6 +1,4 @@
-{ ... }:
-
-{
+{...}: {
   date = {
     start = {
       year = 2021;
@@ -39,6 +37,5 @@
       "Probabilistic Programming"
     ];
   };
-  description =
-    "Graduated with highest honors (18.43/20), second of a highly-selective class of 70 students.";
+  description = "Graduated with highest honors (18.43/20), second of a highly-selective class of 70 students.";
 }
