@@ -16,7 +16,7 @@ in {
   };
   avatar = file "avatar.jpg";
   location = {
-    office = "4031";
+    office = "3010";
     number = "8";
     street = "place Aurélie Nemours";
     city = "Paris";
