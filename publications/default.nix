@@ -3,7 +3,6 @@
   lib,
   ...
 }: let
-  csl = lib.importJSON ./publications.json;
   export = id: publication: format: let
     publicationJSON =
       builtins.toFile "${id}.json" (builtins.toJSON [publication]);
@@ -12,8 +11,7 @@
     '';
   in
     builtins.readFile publicationOut;
-in
-  builtins.map (publication:
+  importPublications = builtins.map (publication:
     with publication; let
       exportThisTo = export id publication;
     in
@@ -26,5 +24,8 @@ in
           biblatex = exportThisTo "biblatex";
           csljson = exportThisTo "csljson";
         };
-      })
-  csl
+      });
+in {
+  selected = importPublications (lib.importJSON ./publications_selected.json);
+  all = importPublications (lib.importJSON ./publications.json);
+}
