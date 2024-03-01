@@ -26,7 +26,7 @@
   assets = [
     {
       type = "Publications";
-      id = "aristoteFunctorialApproachMinimizing2023";
+      id = "aristoteFunctorialApproachMinimizing2023a";
       name = "paper";
     }
   ];
