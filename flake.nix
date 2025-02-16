@@ -14,5 +14,6 @@
     flake-parts.lib.mkFlake {inherit inputs;} {
       imports = builtins.attrValues {inherit (my-nixpkgs.flakeModules) personal;};
       flake.lib.formatWith = attrs: import ./default.nix attrs;
+      perSystem = {pkgs, ...}: {packages.src = pkgs.callPackage ./src.nix {};};
     };
 }
