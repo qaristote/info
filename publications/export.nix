@@ -14,7 +14,7 @@ runCommand "publications" {buildInputs = [jq pandoc];} ''
     echo $id
     echo "$ref" > "csljson/$id"
     cat csljson/$id
-    pandoc --from=csljson --to=biblatex --output "biblatex/$id" <<< "[ $ref ]"
-    pandoc --from=csljson --to=bibtex   --output "bibtex/$id"   <<< "[ $ref ]"
+    pandoc --from=cslyaml --to=biblatex --output "biblatex/$id" <<< "[ $ref ]"
+    pandoc --from=cslyaml --to=bibtex   --output "bibtex/$id"   <<< "[ $ref ]"
   done
 ''
