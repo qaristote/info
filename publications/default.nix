@@ -16,5 +16,5 @@ in {
   reports = importPublications (lib.importJSON ./reports.json);
   talks = importPublications (lib.importJSON ./talks.json);
   misc = importPublications (lib.importJSON ./miscellaneous.json);
-  files = pkgs.callPackage ./export.nix {};
+  files = pkgs.callPackage ./export.nix {refsJSON = lib.concatStringsSep " " [./conferences.json ./journals.json ./reports.json ./miscellaneous.json];};
 }
