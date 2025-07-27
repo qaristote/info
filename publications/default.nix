@@ -11,10 +11,10 @@
         url = URL;
       });
 in {
-  conferences = importPublications (lib.importYAML ./conferences.yaml);
-  journals = importPublications (lib.importYAML ./journals.yaml);
-  manuscripts = importPublications (lib.importYAML ./manuscripts.yaml);
-  talks = importPublications (lib.importYAML ./talks.yaml);
-  misc = importPublications (lib.importYAML ./preprints.yaml);
+  conferences = importPublications (lib.importTOML ./conferences.yaml);
+  journals = importPublications (lib.importTOML ./journals.yaml);
+  manuscripts = importPublications (lib.importTOML ./manuscripts.yaml);
+  talks = importPublications (lib.importTOML ./talks.yaml);
+  misc = importPublications (lib.importTOML ./preprints.yaml);
   files = pkgs.callPackage ./export.nix {};
 }
