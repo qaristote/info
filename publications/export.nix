@@ -10,7 +10,7 @@ runCommand "publications" {buildInputs = [jq pandoc];} ''
 
   for refs in ${refsJSON}
   do
-    jq --compact-output ".[]" $refs | while read ref
+    jq --compact-output ".[]" $refs | while read -r ref
     do
       id=$(echo "$ref" | jq --raw-output '.id')
       echo $id
