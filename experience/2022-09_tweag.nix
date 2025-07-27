@@ -27,7 +27,7 @@
     {
       name = "blog post";
       id = "aristoteSmtlibbackendsFasterSMTLIBbased2023";
-      type = "Publications";
+      type = "Writings";
     }
     {
       name = "library";

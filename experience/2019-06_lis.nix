@@ -27,12 +27,12 @@
     {
       name = "internship report";
       id = "aristoteMarcheQuantiqueReseau2019";
-      type = "Publications";
+      type = "Writings";
     }
     {
       name = "paper";
       id = "aristoteDynamicalTriangulationInduced2020";
-      type = "Publications";
+      type = "Writings";
     }
   ];
   description = "Developed a quantum walker model whose density changes its own environment.";
