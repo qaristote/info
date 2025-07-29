@@ -18,7 +18,7 @@
 in {
   inherit files;
   basics = make ./basics {};
-  publications = make ./publications {};
+  research = make ./research {};
   experience = make ./experience {};
   languages = make ./languages {};
   education = make ./education {};
