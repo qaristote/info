@@ -1,7 +1,17 @@
-{lib, ...}: let
+{ lib, ... }:
+let
   fs = lib.fileset;
 in
-  fs.toSource {
-    root = ./.;
-    fileset = fs.unions [./default.nix ./basics ./education ./experience ./files ./languages ./publications ./software];
-  }
+fs.toSource {
+  root = ./.;
+  fileset = fs.unions [
+    ./default.nix
+    ./basics
+    ./education
+    ./experience
+    ./files
+    ./languages
+    ./research
+    ./software
+  ];
+}
