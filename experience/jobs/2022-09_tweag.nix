@@ -1,4 +1,5 @@
-{href, ...}: {
+{ href, ... }:
+{
   date = {
     start = {
       year = 2022;
@@ -35,7 +36,5 @@
       type = "Software";
     }
   ];
-  description = "Sped-up ${
-    href "https://github.com/tweag/pirouette" "Pirouette"
-  } (a symbolic evaluator using incorrectness logic) by optimizing its interactions with SMT solvers.";
+  description = "Sped-up ${href "https://github.com/tweag/pirouette" "Pirouette"} (a symbolic evaluator using incorrectness logic) by optimizing its interactions with SMT solvers.";
 }
