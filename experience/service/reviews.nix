@@ -1,11 +1,11 @@
 { ... }:
 {
   conferences = {
-    number = 2;
+    number = 3;
     names = {
-      CAlCo = [ 2023 ];
-      FoSSaCS = [ 2025 ];
+      CALCO = [ 2023 ];
       CONCUR = [ 2025 ];
+      FoSSaCS = [ 2025 ];
     };
   };
   journals = {

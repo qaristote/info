@@ -1,5 +1,5 @@
 { make, ... }:
-builtins.map (path: make path { }) [
-  ./reviews.nix
-  ./teaching.nix
-]
+{
+  reviews = make ./reviews.nix { };
+  teaching = make ./teaching.nix { };
+}
