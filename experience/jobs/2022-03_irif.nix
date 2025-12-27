@@ -31,5 +31,5 @@
       type = "Writings";
     }
   ];
-  description = "Generalized a categorical framework for the minimization and active learning of transition systems and instanciated it to develop new such algorithms.";
+  description = "Generalized a categorical framework for the minimization and active learning of transition systems and instantiated it to develop new such algorithms.";
 }
