@@ -2,13 +2,15 @@
   href,
   file,
   ...
-}: let
+}:
+let
   institution = {
     position = "PhD student in Theoretical Computer Science";
     name = "IRIF";
     url = "https://www.irif.fr/en/index";
   };
-in {
+in
+{
   inherit institution;
   email = {
     academic = "quentin.aristote@irif.fr";
@@ -47,38 +49,24 @@ in {
       url = "https://fr.linkedin.com/in/quentin-aristote-83979b186";
     };
   };
-  keys = let
-    getKeyFiles = type: keys: {
-      "${type}" =
-        builtins.foldl'
-        (tmp: name: tmp // {"${name}" = file "keys/${type}/${name}.pub";}) {}
-        keys;
-    };
-  in
-    getKeyFiles "pgp" ["DFC1660846EEA97C059F18534EF515441E635D36"]
-    // getKeyFiles "ssh" ["qaristote@latitude-7490"];
+  keys =
+    let
+      getKeyFiles = type: keys: {
+        "${type}" = builtins.foldl' (
+          tmp: name: tmp // { "${name}" = file "keys/${type}/${name}.pub"; }
+        ) { } keys;
+      };
+    in
+    getKeyFiles "pgp" [ "DFC1660846EEA97C059F18534EF515441E635D36" ]
+    // getKeyFiles "ssh" [ "qaristote@latitude-7490" ];
   name = {
     first = "Quentin";
     last = "Aristote";
   };
   url = "https://quentin.aristote.fr/";
   description = ''
-    I am a PhD student in Theoretical Computer Science at ${
-      href "https://www.irif.fr/en/index" "IRIF"
-    }, under the supervision of ${
-      href "https://www.irif.fr/~petrisan/" "Daniela Petrişan"
-    }. My PhD involves studying the compositionality of ${
-      href "https://en.wikipedia.org/wiki/Monad_(category_theory)" "monads"
-    } through ${
-      href "https://ncatlab.org/nlab/show/weak+distributive+law"
-      "weak distributive laws"
-    }, and its applications to ${
-      href "https://en.wikipedia.org/wiki/Side-effect_(computer_science)"
-      "effectful programming"
-    }, in particular within ${
-      href "https://en.wikipedia.org/wiki/Automata_theory" "automata theory"
-    }.
+    I am a PhD student in Theoretical Computer Science at ${href "https://www.irif.fr/en/index" "IRIF"}, under the supervision of ${href "https://www.irif.fr/~petrisan/" "Daniela Petrişan"}. My PhD involves studying the compositionality of ${href "https://en.wikipedia.org/wiki/Monad_(category_theory)" "monads"} through ${href "https://ncatlab.org/nlab/show/weak+distributive+law" "weak distributive laws"}, and its applications to ${href "https://en.wikipedia.org/wiki/Side-effect_(computer_science)" "effectful programming"}, in particular within ${href "https://en.wikipedia.org/wiki/Automata_theory" "automata theory"}.
 
-    More generally, I am mainly interested in applying abstract mathematical theories (e.g. category theory) to computer science in order to get new results for free. I am also interested in practical computer science and enjoy programming using functional languages as well as tinkering with systems.
+    More generally, I am mainly interested in applying abstract mathematical theories (e.g. category theory) to computer science: this involves astutely rephrasing concrete problems in abstract settings; the hope is then to get new insights from general theorems. I am also interested in practical computer science and enjoy programming using functional languages as well as tinkering with systems.
   '';
 }
