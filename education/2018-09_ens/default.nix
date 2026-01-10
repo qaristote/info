@@ -24,5 +24,5 @@
     ./2019-09_m1.nix
     ./2021-09_m2.nix
   ];
-  description = "One extra year to follow additional postgraduate courses in Mathematics; another one to do additional internships in Computer Science.";
+  description = "Also followed extra post-graduate courses in Mathematics.";
 }
