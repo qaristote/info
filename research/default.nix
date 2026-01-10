@@ -10,7 +10,7 @@ let
     researchItem
     // {
       year = with builtins; toString (head (head issued.date-parts));
-      url = URL;
+      url = researchItem.URL or null;
     }
   );
 in
